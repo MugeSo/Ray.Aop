@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "html" "">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>phpDox - Ray\Aop\Joinpoint - API Documentation</title>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="topbar clearfix">
+        <h1>
+          <a class="brand" href="../index.html">phpDox - API Documentation</a>
+        </h1>
+        <ul class="nav">
+          <li class="active">
+            <a href="../index.html">Overview</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <h3>Methods</h3>
+        <ul>
+          <li>
+            <a href="#getThis">getThis</a>
+          </li>
+          <li>
+            <a href="#proceed">proceed</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2><span style="font-size:60%">Ray\Aop\</span>Joinpoint</h2>
+        <div class="file-notice">
+          <p>This interface represents a generic runtime joinpoint (in the AOP terminology).</p>
+          <p>
+            <pre>&lt;p&gt;A runtime joinpoint is an &lt;i&gt;event&lt;/i&gt; that occurs on a static
+joinpoint (i.e. a location in a the program). For instance, an
+invocation is the runtime joinpoint on a method (static joinpoint).
+The static part of a given joinpoint can be generically retrieved
+using the  method.
+&lt;p&gt;In the context of an interception framework, a runtime joinpoint
+is then the reification of an access to an accessible object (a
+method, a constructor, a field), i.e. the static part of the
+joinpoint. It is passed to the interceptors that are installed on
+the static joinpoint.
+</pre>
+          </p>
+        </div>
+        <ul class="fileinfos"/>
+        <h3>Methods</h3>
+        <ul class="varlist">
+          <li>
+            <a name="getThis"/>
+            <h4><span class="label public">public</span>getThis<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Returns the object that holds the current joinpoint's static part.<pre>&lt;p&gt;For instance, the target object for an invocation.</pre></li>
+            </p>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li>(can be null if the accessible object is static).</li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="proceed"/>
+            <h4><span class="label public">public</span>proceed<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Proceeds to the next interceptor in the chain.<pre>&lt;p&gt;The implementation and the semantics of this method depends
+on the actual joinpoint type (see the children interfaces).</pre></li>
+            </p>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li>see the children interfaces' proceed definition.</li>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer">Generated using phpDox 0.5.0 - Copyright (C) 2010 - 2013 by Arne Blankerts</div>
+      </div>
+    </div>
+  </body>
+</html>

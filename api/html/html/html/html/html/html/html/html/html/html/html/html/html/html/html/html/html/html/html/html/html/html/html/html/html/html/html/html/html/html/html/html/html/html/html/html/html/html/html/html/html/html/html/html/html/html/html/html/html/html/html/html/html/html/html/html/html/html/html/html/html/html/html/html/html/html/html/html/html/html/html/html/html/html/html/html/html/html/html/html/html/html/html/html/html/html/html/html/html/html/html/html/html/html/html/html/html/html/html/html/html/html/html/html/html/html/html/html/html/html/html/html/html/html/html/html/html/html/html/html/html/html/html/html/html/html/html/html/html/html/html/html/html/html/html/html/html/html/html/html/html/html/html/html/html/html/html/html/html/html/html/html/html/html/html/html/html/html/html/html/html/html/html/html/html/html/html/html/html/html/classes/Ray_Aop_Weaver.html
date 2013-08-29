@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "html" "">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>phpDox - Ray\Aop\Weaver - API Documentation</title>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="topbar clearfix">
+        <h1>
+          <a class="brand" href="../index.html">phpDox - API Documentation</a>
+        </h1>
+        <ul class="nav">
+          <li class="active">
+            <a href="../index.html">Overview</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <h3>Members</h3>
+        <ul>
+          <li>
+            <a href="#object">$object</a>
+          </li>
+          <li>
+            <a href="#bind">$bind</a>
+          </li>
+          <li>
+            <a href="#interceptors">$interceptors</a>
+          </li>
+        </ul>
+        <h3>Methods</h3>
+        <ul>
+          <li>
+            <a href="#___getBind">___getBind</a>
+          </li>
+          <li>
+            <a href="#___getObject">___getObject</a>
+          </li>
+          <li>
+            <a href="#__call">__call</a>
+          </li>
+          <li>
+            <a href="#__construct">__construct</a>
+          </li>
+          <li>
+            <a href="#__get">__get</a>
+          </li>
+          <li>
+            <a href="#__invoke">__invoke</a>
+          </li>
+          <li>
+            <a href="#__set">__set</a>
+          </li>
+          <li>
+            <a href="#__toString">__toString</a>
+          </li>
+          <li>
+            <a href="#offsetExists">offsetExists</a>
+          </li>
+          <li>
+            <a href="#offsetGet">offsetGet</a>
+          </li>
+          <li>
+            <a href="#offsetSet">offsetSet</a>
+          </li>
+          <li>
+            <a href="#offsetUnset">offsetUnset</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2><span style="font-size:60%">Ray\Aop\</span>Weaver</h2>
+        <div class="file-notice">
+          <p>Weaver</p>
+          <p>
+            <pre>The proxy object to call intercepted method.</pre>
+          </p>
+        </div>
+        <ul class="fileinfos"/>
+        <h3>Implements</h3>
+        <ul class="varlist">
+          <li>
+            <a href="../interfaces/Ray_Aop_Weave.html">Ray\Aop\Weave</a>
+          </li>
+          <li>
+            <span title="ArrayAccess">ArrayAccess</span>
+          </li>
+        </ul>
+        <h3>Members</h3>
+        <ul class="varlist">
+          <li>
+            <a name="object"/>
+            <h4><span class="label protected">protected</span>mixed 
+                
+                $object</h4>
+            <ul class="varlist">
+              <li>Target object</li>
+            </ul>
+          </li>
+          <li>
+            <a name="bind"/>
+            <h4><span class="label protected">protected</span>array 
+                
+                $bind</h4>
+            <ul class="varlist">
+              <li>Interceptor binding</li>
+            </ul>
+          </li>
+          <li>
+            <a name="interceptors"/>
+            <h4><span class="label protected">protected</span>array 
+                
+                $interceptors</h4>
+            <ul class="varlist">
+              <li>Interceptors</li>
+            </ul>
+          </li>
+        </ul>
+        <h3>Constructor</h3>
+        <ul class="varlist">
+          <li>
+            <a name="__construct"/>
+            <h4><span class="label public">public</span>__construct<span style="font-size:90%;">( <span class="param-type"/><strong> $object</strong>, <span class="param-type"><a href="../classes/Ray_Aop_Bind.html">Ray\Aop\Bind</a></span><strong> $bind</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+        </ul>
+        <h3>Methods</h3>
+        <ul class="varlist">
+          <li>
+            <a name="___getBind"/>
+            <h4><span class="label public">public</span>___getBind<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="___getObject"/>
+            <h4><span class="label public">public</span>___getObject<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="__call"/>
+            <h4><span class="label public">public</span>__call<span style="font-size:90%;">( <span class="param-type"/><strong> $method</strong>, <span class="param-type">Array</span><strong> $params</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="__get"/>
+            <h4><span class="label public">public</span>__get<span style="font-size:90%;">( <span class="param-type">string</span><strong> $name</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Return public property</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$name</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="throws">Throws:</h4>
+              <ul class="throws">
+                <li>
+                  <code>UndefinedProperty</code>
+                </li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="__invoke"/>
+            <h4><span class="label public">public</span>__invoke<span style="font-size:90%;">( <span class="param-type"><span title="Ray\Aop\callable">callable</span></span><strong> $getParams</strong>, <span class="param-type"/><strong> $method</strong>, <span class="param-type">Array</span><strong> $query</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="__set"/>
+            <h4><span class="label public">public</span>__set<span style="font-size:90%;">( <span class="param-type">string</span><strong> $name</strong>, <span class="param-type">mixed</span><strong> $value</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Set public property</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$name</code> - </li>
+                <li><code>$value</code> - </li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="__toString"/>
+            <h4><span class="label public">public</span>__toString<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Return string</li>
+            </p>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="offsetExists"/>
+            <h4><span class="label public">public</span>offsetExists<span style="font-size:90%;">( <span class="param-type">mixed</span><strong> $offset</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Return offsetExists</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$offset</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="throws">Throws:</h4>
+              <ul class="throws">
+                <li>
+                  <code>\RuntimeException</code>
+                </li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="offsetGet"/>
+            <h4><span class="label public">public</span>offsetGet<span style="font-size:90%;">( <span class="param-type">mixed</span><strong> $offset</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Return offset exists</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$offset</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="throws">Throws:</h4>
+              <ul class="throws">
+                <li>
+                  <code>\RuntimeException</code>
+                </li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="offsetSet"/>
+            <h4><span class="label public">public</span>offsetSet<span style="font-size:90%;">( <span class="param-type">string</span><strong> $offset</strong>, <span class="param-type">mixed</span><strong> $value</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Set</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$offset</code> - key</li>
+                <li><code>$value</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="throws">Throws:</h4>
+              <ul class="throws">
+                <li>
+                  <code>RuntimeException</code>
+                </li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="offsetUnset"/>
+            <h4><span class="label public">public</span>offsetUnset<span style="font-size:90%;">( <span class="param-type">string</span><strong> $offset</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Unset</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$offset</code> - key</li>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer">Generated using phpDox 0.5.0 - Copyright (C) 2010 - 2013 by Arne Blankerts</div>
+      </div>
+    </div>
+  </body>
+</html>

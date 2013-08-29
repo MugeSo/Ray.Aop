@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "html" "">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>phpDox - Ray\Aop\Compiler - API Documentation</title>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="topbar clearfix">
+        <h1>
+          <a class="brand" href="../index.html">phpDox - API Documentation</a>
+        </h1>
+        <ul class="nav">
+          <li class="active">
+            <a href="../index.html">Overview</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <h3>Members</h3>
+        <ul>
+          <li>
+            <a href="#parser">$parser</a>
+          </li>
+          <li>
+            <a href="#factory">$factory</a>
+          </li>
+          <li>
+            <a href="#classDir">$classDir</a>
+          </li>
+        </ul>
+        <h3>Methods</h3>
+        <ul>
+          <li>
+            <a href="#__construct">__construct</a>
+          </li>
+          <li>
+            <a href="#compile">compile</a>
+          </li>
+          <li>
+            <a href="#getClass">getClass</a>
+          </li>
+          <li>
+            <a href="#getClassName">getClassName</a>
+          </li>
+          <li>
+            <a href="#getMethod">getMethod</a>
+          </li>
+          <li>
+            <a href="#getMethodInsideStatement">getMethodInsideStatement</a>
+          </li>
+          <li>
+            <a href="#getMethods">getMethods</a>
+          </li>
+          <li>
+            <a href="#getWeavedMethodTemplate">getWeavedMethodTemplate</a>
+          </li>
+          <li>
+            <a href="#newInstance">newInstance</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2><span style="font-size:60%">Ray\Aop\</span>Compiler</h2>
+        <div class="file-notice">
+          <p>This file is part of the Ray.Aop package</p>
+        </div>
+        <ul class="fileinfos">
+          <li><b>License: </b>http://opensource.org/licenses/bsd-license.php BSD</li>
+        </ul>
+        <h3>Implements</h3>
+        <ul class="varlist">
+          <li>
+            <a href="../interfaces/Ray_Aop_CompilerInterface.html">Ray\Aop\CompilerInterface</a>
+          </li>
+        </ul>
+        <h3>Members</h3>
+        <ul class="varlist">
+          <li>
+            <a name="parser"/>
+            <h4><span class="label private">private</span>object 
+                
+                $parser</h4>
+            <ul class="varlist">
+              <li/>
+            </ul>
+          </li>
+          <li>
+            <a name="factory"/>
+            <h4><span class="label private">private</span>object 
+                
+                $factory</h4>
+            <ul class="varlist">
+              <li/>
+            </ul>
+          </li>
+          <li>
+            <a name="classDir"/>
+            <h4><span class="label private">private</span>string 
+                
+                $classDir</h4>
+            <ul class="varlist">
+              <li/>
+            </ul>
+          </li>
+        </ul>
+        <h3>Constructor</h3>
+        <ul class="varlist">
+          <li>
+            <a name="__construct"/>
+            <h4><span class="label public">public</span>__construct<span style="font-size:90%;">( <span class="param-type"><span title="null">null</span></span><strong> $classDir</strong>, <span class="param-type"><span title="PHPParser_Parser">PHPParser_Parser</span></span><strong> $parser</strong>, <span class="param-type"><span title="PHPParser_BuilderFactory">PHPParser_BuilderFactory</span></span><strong> $factory</strong>, <span class="param-type"><span title="PHPParser_PrettyPrinterAbstract">PHPParser_PrettyPrinterAbstract</span></span><strong> $printer</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$classDir</code> - </li>
+                <li><code>$parser</code> - </li>
+                <li><code>$factory</code> - </li>
+                <li><code>$printer</code> - </li>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <h3>Methods</h3>
+        <ul class="varlist">
+          <li>
+            <a name="compile"/>
+            <h4><span class="label public">public</span>compile<span style="font-size:90%;">( <span class="param-type"/><strong> $class</strong>, <span class="param-type"><a href="../classes/Ray_Aop_Bind.html">Ray\Aop\Bind</a></span><strong> $bind</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="newInstance"/>
+            <h4><span class="label public">public</span>newInstance<span style="font-size:90%;">( <span class="param-type"/><strong> $class</strong>, <span class="param-type">Array</span><strong> $args</strong>, <span class="param-type"><a href="../classes/Ray_Aop_Bind.html">Ray\Aop\Bind</a></span><strong> $bind</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>{@inheritdoc}</li>
+            </p>
+          </li>
+          <li>
+            <a name="getClass"/>
+            <h4><span class="label private">private</span>getClass<span style="font-size:90%;">( <span class="param-type">string</span><strong> $newClassName</strong>, <span class="param-type"><span title="ReflectionClass">ReflectionClass</span></span><strong> $class</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Return class statement</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$newClassName</code> - </li>
+                <li><code>$class</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="getClassName"/>
+            <h4><span class="label private">private</span>getClassName<span style="font-size:90%;">( <span class="param-type"><span title="ReflectionClass">ReflectionClass</span></span><strong> $class</strong>, <span class="param-type"><a href="../classes/Ray_Aop_Bind.html">Ray\Aop\Bind</a></span><strong> $bind</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$class</code> - </li>
+                <li><code>$bind</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="getMethod"/>
+            <h4><span class="label private">private</span>getMethod<span style="font-size:90%;">( <span class="param-type"><span title="ReflectionMethod">ReflectionMethod</span></span><strong> $method</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$method</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="getMethodInsideStatement"/>
+            <h4><span class="label private">private</span>getMethodInsideStatement<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="getMethods"/>
+            <h4><span class="label private">private</span>getMethods<span style="font-size:90%;">( <span class="param-type"><span title="ReflectionClass">ReflectionClass</span></span><strong> $class</strong>, <span class="param-type"><a href="../classes/Ray_Aop_Bind.html">Ray\Aop\Bind</a></span><strong> $bind</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$class</code> - </li>
+                <li><code>$bind</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="getWeavedMethodTemplate"/>
+            <h4><span class="label private">private</span>getWeavedMethodTemplate<span style="font-size:90%;">(  )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li/>
+            </p>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer">Generated using phpDox 0.5.0 - Copyright (C) 2010 - 2013 by Arne Blankerts</div>
+      </div>
+    </div>
+  </body>
+</html>

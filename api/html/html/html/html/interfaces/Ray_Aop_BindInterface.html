@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "html" "">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>phpDox - Ray\Aop\BindInterface - API Documentation</title>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="topbar clearfix">
+        <h1>
+          <a class="brand" href="../index.html">phpDox - API Documentation</a>
+        </h1>
+        <ul class="nav">
+          <li class="active">
+            <a href="../index.html">Overview</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <h3>Methods</h3>
+        <ul>
+          <li>
+            <a href="#__invoke">__invoke</a>
+          </li>
+          <li>
+            <a href="#bind">bind</a>
+          </li>
+          <li>
+            <a href="#bindInterceptors">bindInterceptors</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2><span style="font-size:60%">Ray\Aop\</span>BindInterface</h2>
+        <div class="file-notice">
+          <p>Bind method name to interceptors</p>
+        </div>
+        <ul class="fileinfos"/>
+        <h3>Methods</h3>
+        <ul class="varlist">
+          <li>
+            <a name="__invoke"/>
+            <h4><span class="label public">public</span>__invoke<span style="font-size:90%;">( <span class="param-type">string</span><strong> $name</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Get matched Interceptor</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$name</code> - class name</li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li>string|boolean matched method name</li>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="bind"/>
+            <h4><span class="label public">public</span>bind<span style="font-size:90%;">( <span class="param-type">string</span><strong> $class</strong>, <span class="param-type">Array</span><strong> $pointcuts</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Make pointcuts to binding information</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$class</code> - </li>
+                <li><code>$pointcuts</code> - </li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a name="bindInterceptors"/>
+            <h4><span class="label public">public</span>bindInterceptors<span style="font-size:90%;">( <span class="param-type">string</span><strong> $method</strong>, <span class="param-type">Array</span><strong> $interceptors</strong>, <span class="param-type">invalid method call</span><strong> $annotation</strong> )</span></h4>
+            <p style="font-size:110%; padding-top:5px;">
+              <li>Bind method to interceptors</li>
+            </p>
+            <ul>
+              <h4 class="param">Parameters:</h4>
+              <ul class="param">
+                <li><code>$method</code> - </li>
+                <li><code>$interceptors</code> - </li>
+                <li><code>$annotation</code> - Binding annotation if annotate bind</li>
+              </ul>
+            </ul>
+            <ul>
+              <h4 class="return">Returns:</h4>
+              <ul class="return">
+                <li/>
+              </ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer">Generated using phpDox 0.5.0 - Copyright (C) 2010 - 2013 by Arne Blankerts</div>
+      </div>
+    </div>
+  </body>
+</html>
